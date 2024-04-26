@@ -1,0 +1,24 @@
+// если вы хотите использовать sass-переменные - удалите root
+// colors
+:root {
+  // base
+  --font-family: "Roboto", sans-serif;
+  --second-family: "OpenSans", sans-serif;
+  --content-width: 1200px;
+  --container-offset: 100px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+  // --gap: 30px;
+
+  // colors
+    --solid-heading: #42446e;
+    --dark-content: #666;
+    --solid-heading-dark-mode: #ccc;
+    --light-content: #a7a7a7;
+    --dark-mode: #191919;
+    --light-mode: #e5e5e5;
+    --button-text: #018c0f;
+    --button-success: #d7ffe0;
+    --card-dark-bg: #363636;
+    --card-light-bg: #fff;
+    --card-dark-content: #000;
+}
