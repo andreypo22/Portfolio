@@ -20,15 +20,78 @@
   }
 
   &__switch {
+    position: relative;
     width: max-content;
+    margin-right: 20px;
+
+    @include small-tablet {
+      margin-right: 0;
+    }
 
     @include mobile {
       order: 1;
       margin-bottom: 20px;
+      margin-right: 20px;
+    }
+  }
+
+  &__lang {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: auto;
+    width: 90px;
+
+    @include small-tablet {
+      margin-right: 20px;
+    }
+
+    @include mobile {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+
+    &-btn {
+      background-color: transparent;
+      color: var(--light-content);
+      border: 1px solid transparent;
+      border-radius: 2px;
+      font-family: "OpenSans";
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 130%;
+      text-align: center;
+      color: var(--light-content);
+      cursor: pointer;
+      transition: color .2s ease-in-out, border-color .2s ease-in-out, opacity .2s ease-in-out;
+
+      &[disabled] {
+        border-color: var(--dark-content);
+        opacity: .5;
+
+        @include hover {
+          color: var(--light-content);
+        }
+      }
+
+      &.focus-visible {
+        outline: none;
+        color: var(--dark-content);
+      }
+  
+      @include hover {
+        color: var(--dark-content);
+      }
+    }
+
+    &-slash {
+      color: var(--light-content);
     }
   }
 
   &__nav {
+    margin-right: 20px;
+
     @include small-tablet {
       position: absolute;
       transform: translateX(-100vw);

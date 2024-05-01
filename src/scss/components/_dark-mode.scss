@@ -34,6 +34,24 @@ body:has(.switch__input:checked) {
 }
 
 body:has(.switch__input:checked) {
+  & .header__lang-btn {
+    color: var(--dark-content);
+
+    &.focus-visible {
+      color: var(--light-content);
+    }
+
+    @include hover {
+      color: var(--light-content);
+    }
+
+    &[disabled] {
+      @include hover {
+        color: var(--dark-content);
+      }
+    }
+  }
+
   & .burger {
     color: var(--dark-content);
 
@@ -198,7 +216,7 @@ body:has(.switch__input:checked) {
 
 .switch {
 	margin: auto;
-	position: relative;
+	// position: relative;
   cursor: pointer;
 }
 .switch__icon,

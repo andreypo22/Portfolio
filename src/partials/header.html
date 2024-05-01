@@ -26,13 +26,25 @@
         <span class="switch__sr">Dark Mode</span>
       </label>
     </div>
+    <div class="header__lang">
+      <button class="header__lang-btn header__lang-btn--en">en</button>
+      <span class="header__lang-slash"> / </span>
+      <button class="header__lang-btn header__lang-btn--ru">ru</button>
+    </div>
     <nav class="nav header__nav" data-menu title="Главное меню">
-      <ul class="list-reset nav__list">
-        <li class="nav__item" data-menu-item ><a href="#" class="nav__link">Home</a></li>
-        <li class="nav__item" data-menu-item ><a href="#about" class="nav__link">About</a></li>
-        <li class="nav__item" data-menu-item ><a href="#tech-stack" class="nav__link">Tech Stack</a></li>
-        <li class="nav__item" data-menu-item ><a href="#projects" class="nav__link">Projects</a></li>
-        <li class="nav__item" data-menu-item ><a href="#contacts" class="nav__link">Contacts</a></li>
+      <ul class="list-reset nav__list" data-lang>
+        <li class="nav__item" data-menu-item><a href="#" class="nav__link">Home</a></li>
+        <li class="nav__item" data-menu-item><a href="#about" class="nav__link">About</a></li>
+        <li class="nav__item" data-menu-item><a href="#tech-stack" class="nav__link">Tech Stack</a></li>
+        <li class="nav__item" data-menu-item><a href="#projects" class="nav__link">Projects</a></li>
+        <li class="nav__item" data-menu-item><a href="#contacts" class="nav__link">Contacts</a></li>
+      </ul>
+      <ul class="list-reset nav__list not-active" data-lang>
+        <li class="nav__item" data-menu-item><a href="#" class="nav__link">Главная</a></li>
+        <li class="nav__item" data-menu-item><a href="#about" class="nav__link">Обо мне</a></li>
+        <li class="nav__item" data-menu-item><a href="#tech-stack" class="nav__link">Tech Stack</a></li>
+        <li class="nav__item" data-menu-item><a href="#projects" class="nav__link">Проекты</a></li>
+        <li class="nav__item" data-menu-item><a href="#contacts" class="nav__link">Контакты</a></li>
       </ul>
     </nav>
     <ul class="list-reset social header__social" title="Социальные сети">
@@ -53,7 +65,7 @@
       <li class="social__item">
         <a href="#" target="_blank" class="social__link social__link--vk" aria-label="Моя страница в Вконтакте">
           <svg class="social__icon">
-            <use xlink:href="img/sprite.svg#vkontakte"></use>
+            <use xlink:href="img/sprite.svg#vk"></use>
           </svg>
         </a>
       </li>
