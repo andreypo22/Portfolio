@@ -11,7 +11,7 @@ function Home() {
             <li className="content-list__item">
               <h2 className="title-2">Frontend</h2>
               <p>
-                HTML, CSS, JavaScript, React, Redux Toolkit BootStrap, Saas,
+                HTML, CSS, JavaScript, React, Redux Toolkit, BootStrap, Saas,
                 Git, Webpack, Vite, Gulp, npm, REST API
               </p>
             </li>
