@@ -8,6 +8,13 @@ import project07 from "./../img/projects/07.jpg";
 
 const projects = [
   {
+    title: "Questionnaire",
+    skills: "HTML, CSS, React, Redux Toolkit, Vite, JSON server",
+    img: project06,
+    gitHubLink: "https://github.com/andreypo22/Questionnaire",
+    previewLink: "https://questionnaire-zvty.onrender.com/",
+  },
+  {
     title: "Streaming company site",
     skills: "HTML, SCSS, JavaScript, JSX, Vite, Minista, BEM",
     img: project01,
@@ -47,13 +54,6 @@ const projects = [
     img: project05,
     gitHubLink: "https://github.com/andreypo22/Creative_agansy_studio",
     previewLink: "https://agansy-studio-app.onrender.com",
-  },
-  {
-    title: "W-wave radio site",
-    skills: "HTML, SCSS, JavaScript, Gulp, Webpack, BEM",
-    img: project06,
-    gitHubLink: "https://github.com/andreypo22/W-Wave_radio",
-    previewLink: "https://w-waveradio.onrender.com",
   },
 ];
 
